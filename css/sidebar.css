@@ -29,8 +29,10 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
-@media (min-width: 1200px) .container {
-    max-width: 1240px;
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1240px;
+    }
 }
 
 body {
@@ -157,14 +159,10 @@ img {
 
 #spanmargin {
     padding-left: 20px;
-    "
-
 }
 
 #spanmargin1 {
     padding-left: 40px;
-    "
-
 }
 
 #drowpdowncolor {
@@ -348,8 +346,6 @@ ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #406396!important;
-    '
-
 }
 
 ul.CTAs {
