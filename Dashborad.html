@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Dashboard</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/sidebar.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"></script>
+
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+
+
+</head>
+
+<body style="background: linear-gradient(to top right, #08aeea 0%, #b721ff 100%)">
+
+    <div class="wrapper">
+
+        <!-- Sidebar  -->
+
+        <nav id="sidebar">
+
+            <div class="sidebar-header">
+
+                <a href="index.html"> <img width="100%" height="100%" src="img/logo.png"> </a>
+
+            </div>
+
+
+            <ul class="list-unstyled components">
+
+                <li>
+
+                    <a>
+                        <i class="fas fa-home" id="iconsmargin"></i>
+                        Home
+                    </a>
+
+
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image" id="iconsmargin"></i>Profile
+                    </a>
+                </li>
+
+
+                <li>
+
+                    <!--  <div id="hidemenu"> -->
+
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy" id="iconsmargin"></i> Upload
+                    </a>
+
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+
+                        <li>
+                            <a href="#"> <span id="spanmargin">Upload Work</span></a>
+
+                        </li>
+
+
+                        <li>
+                            <a href="#"> <span id="spanmargin">Unsubmit</span></a>
+
+                        </li>
+
+                        <li>
+                            <a href="#"><span id="spanmargin">Passed</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><span id="spanmargin">Under review</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span id="spanmargin">Rejected</span></a>
+                        </li>
+
+                    </ul>
+                    <!-- </div> -->
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase" id="iconsmargin"></i>Earning
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase" id="iconsmargin"></i>My Data
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-question" id="iconsmargin"></i>Contact Us
+                    </a>
+
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+
+                        <li>
+                            <a href="#"> <span id="spanmargin">Upload requirements</span></a>
+
+                        </li>
+
+
+                        <li>
+                            <a href="#"> <span id="spanmargin">Content Review</span></a>
+
+                        </li>
+
+                        <li>
+                            <a href="#"><span id="spanmargin">Earnings Information</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><span id="spanmargin">Manage account & Legal issue</span></a>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!-- Page Content  -->
+
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg" style="background: #3264BC;">
+                <!--  <div class="container-fluid"> -->
+
+                <button type="button" id="sidebarCollapse" class="btn" style="padding: 0px 20px;">
+                    <i class="fas fa-align-justify"></i>
+                    <!--     <span>Toggle Sidebar</span> -->
+                </button>
+
+                <!--  <img src="img/fabicon.png" width="35px" height="35px;" align="not found" style="padding-left: 10px;"> -->
+
+                <h4 style="color: #fff;"> Contributor Upload System</h4>
+
+
+                <button class="btn btn-light d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+
+                        <li class="nav-item active" style="margin-right: 10px; padding-top: 6px;">
+
+                            <a class="nav-link" href="#"><img src="img/profile.png" width="45px" height="45px;"
+                                    alt="not found"></a>
+                        </li>
+
+
+                    </ul>
+                    <ul class="nav justify-content-center"></ul>
+                </div>
+                <!--     </div> -->
+            </nav>
+
+            <div class="container">
+
+                <div class="tab">
+
+                    <button class="tablinks" onclick="openBox(event, 'Homepage')" id="defaultOpen"><img
+                            src="img/home.png">Homepage</button>
+
+                    <button class="tablinks" onclick="openBox(event, 'Profile')"><img
+                            src="img/user.png">Profile</button>
+
+                    <button class="tablinks" onclick="openBox(event, 'New Upload')"><img src="img/upload.png">New
+                        Upload</button>
+
+                    <button class="tablinks" onclick="openBox(event, 'Earning')"><img
+                            src="img/finance.png">Earning</button>
+
+                    <button class="tablinks" onclick="openCity(event, 'My Uploads')"><img src="img/upload.png">My
+                        Uploads</button>
+
+                    <!--  <button class="tablinks" onclick="openBox(event, 'My Downloads')"><img src="img/download.png">My Downloads</button> -->
+
+                    <button class="tablinks" onclick="openCity(event, 'My Favorites')"><img src="img/like.png">My
+                        Favorites</button>
+
+                </div>
+
+                <hr id="hrrow">
+
+                <div id="Homepage" class="tabcontent">
+                    <!-- home start -->
+
+                    <div class="card-header">
+                        <b>Work State</b>
+
+                    </div>
+
+
+                    <div class="row" id="mainrow">
+
+                        <div class=" card col-sm-4" id="rowdesign">
+
+                            <div class="card-body">
+                                <img src="img/upload.png"><br>
+                                Total uploaded <br> 0
+                            </div>
+
+                        </div>
+
+                        <div class="card col-sm-4" id="rowdesign">
+
+                            <div class="card-body">
+                                <img src="img/image.png"><br>
+                                Total published <br> 0
+                            </div>
+
+                        </div>
+
+                        <div class="card col-sm-4" id="rowdesign">
+
+                            <div class="card-body">
+                                <img src="img/download.png"><br>
+                                Total downloads<br> 0
+
+                            </div>
+
+                        </div> <br>
+
+                    </div>
+
+                    <br>
+
+                    <button class="btn btn--radius-2 btn--blue" type="submit" style="float: right;">Upload</button>
+                    <br>
+                    <br>
+
+                    <div class="card-header">
+                        <b>Income stats</b>
+
+                    </div>
+
+
+                    <div class="row" id="mainrow">
+
+                        <div class="card col-sm-6" id="rowdesign">
+
+                            <div class="card-body">
+                                <img src="img/dollor.png"><br>
+                                Total income <br>0.00
+                            </div>
+
+                        </div>
+
+                        <div class="card col-sm-6" id="rowdesign">
+
+                            <div class="card-body">
+                                <img src="img/bankcard.png"><br>
+                                Undrawn Income <br>0.00
+                            </div>
+
+                        </div>
+                        <br><br>
+
+                    </div>
+
+                    <br>
+
+                    <button class="btn btn--radius-2 btn--blue" type="submit" style="float: right;">View
+                        Details</button>
+                    <br><br>
+
+
+                    <div class="card-header">
+                        <b>What We Need</b>
+
+                    </div><br><br>
+
+
+                    <div class="row" id="mainrow" style="background: #fff">
+
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+
+
+                    </div>
+
+                    <br> <br>
+
+                    <div class="row" id="mainrow" style="background: #fff">
+
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+
+
+                    </div>
+
+                    <br> <br>
+
+                    <div class="row" id="mainrow" style="background: #fff">
+
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+
+
+                    </div>
+
+                    <br> <br>
+
+                    <div class="row" id="mainrow" style="background: #fff">
+
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+
+
+                    </div>
+
+                    <br> <br>
+
+                    <div class="row" id="mainrow" style="background: #fff">
+
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+
+
+                    </div>
+
+                    <br> <br>
+                    <div class="row" id="mainrow" style="background: #fff">
+
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+                        <div class="col-sm-4">
+
+                            <img src="img/one.jpg" width="100%" height="80%" style="border-radius: 20px;"><br><br>
+                            <button class="btn btn--radius-2 btn--blue" type="submit"
+                                style="float: right; background: #f39107;">Go Upload</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit" style="float: left;">View
+                                Details</button>
+
+                        </div>
+
+
+                    </div>
+
+                    <br> <br>
+                    <br> <br>
+
+
+                </div> <!-- home end -->
+
+                <div id="Profile" class="tabcontent">
+                    <!-- profile start -->
+
+                    <div class="card-header">
+                        <b>Basic Information</b>
+
+                    </div>
+
+                    <div class="form-row" style="margin-top: 50px;">
+
+
+
+                        <div class="name">Full Name</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" name="company">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="name">Email</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="Email" name="company">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="name">Password</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="Password" name="company">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Upload Image</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="file" name="company">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="name">Address</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" name="company">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="name">City</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" name="company">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="name">Country</div>
+                        <div class="value">
+                            <div class="input-group" style="display: block;">
+                                <div class="rs-select2 js-select-simple select--no-search">
+
+                                    <select name="subject">
+                                        <option disabled="disabled" selected="selected">Pakistan</option>
+                                        <option>United State</option>
+                                        <option>Afghanistan</option>
+                                        <option>Canida</option>
+                                        <option>Dubai</option>
+                                        <option>United State</option>
+                                        <option>Afghanistan</option>
+                                        <option>Canida</option>
+                                        <option>Dubai</option>
+                                        <option>United State</option>
+                                        <option>Afghanistan</option>
+                                        <option>Canida</option>
+                                        <option>Dubai</option>
+                                    </select>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn--radius-2 btn--blue" type="submit" style="float: right;">Submit</button>
+                    </div>
+
+
+                    <br>
+                    <br>
+                    <br> <br>
+                    <br>
+
+
+                </div> <!-- profile end -->
+
+                <div id="New Upload" class="tabcontent">
+                    <!-- new upload start -->
+
+                    <div class="form-row m-b-55" style="margin-top: 50px;">
+                        <div class="name">Select Categories</div>
+                        <div class="value">
+                            <div class="row row-space">
+                                <div class="col-sm-6">
+
+                                    <div class="input-group" style="display: block;">
+                                        <div class="rs-select2 js-select-simple select--no-search">
+                                            <select name="subject">
+                                                <option disabled="disabled" selected="selected">PNG GRAPHICS</option>
+                                                <option>light</option>
+                                                <option>coin</option>
+                                                <option>vehicle</option>
+                                                <option>Gui</option>
+                                                <option>icon</option>
+                                                <option>penal</option>
+                                                <option>popup</option>
+                                                <option>banner</option>
+                                                <option>text style</option>
+                                                <option>logo</option>
+                                                <option>png</option>
+                                                <option>An Other</option>
+
+                                            </select>
+                                            <div class="select-dropdown"></div>
+                                        </div>
+                                    </div><br>
+                                    <p style="margin-left: 47px;">Recommended size (1200*1200,1080*1080,2000*2000)</p>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group" style="display: block;">
+                                        <div class="rs-select2 js-select-simple select--no-search">
+                                            <select name="subject">
+                                                <option disabled="disabled" selected="selected">TEMPLATES</option>
+                                                <option>Banner</option>
+                                                <option>Flayer</option>
+                                                <option>Poster</option>
+                                                <option>Business</option>
+                                                <option>Brocher</option>
+                                                <option>Invitation</option>
+                                                <option>Birthday</option>
+                                                <option>Certificate</option>
+                                                <option>Gui</option>
+                                                <option>Cards</option>
+                                                <option>Menu</option>
+                                                <option>An Other</option>
+                                            </select>
+                                            <div class="select-dropdown"></div>
+                                        </div>
+                                    </div><br>
+                                    <p style="margin-left: 48px;">Recommended size (1200*1200,1080*1080,2000*2000)</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row m-b-55">
+                        <div class="name"></div>
+                        <div class="value">
+                            <div class="row row-space">
+                                <div class="col-sm-6">
+
+                                    <div class="input-group" style="display: block;">
+                                        <div class="rs-select2 js-select-simple select--no-search">
+                                            <select name="subject">
+                                                <option disabled="disabled" selected="selected">PHOTOS</option>
+                                                <option>Sky</option>
+                                                <option>Scenery</option>
+                                                <option>Beach</option>
+                                                <option>Business</option>
+                                                <option>Sci Fi</option>
+                                                <option>Financial</option>
+                                                <option>Public</option>
+                                                <option>Gif</option>
+                                                <option>Education</option>
+                                                <option>Traffic</option>
+                                                <option>Backgound</option>
+                                                <option>Nature</option>
+                                                <option>Lifestyle</option>
+                                                <option>Event</option>
+                                                <option>Travel</option>
+                                                <option>Internet</option>
+                                                <option>City</option>
+                                                <option>Society</option>
+                                                <option>Mountain</option>
+                                                <option>Vegetable</option>
+                                                <option>Gaming</option>
+                                                <option>Birthday</option>
+                                                <option>An Other</option>
+
+                                            </select>
+                                            <div class="select-dropdown"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group" style="display: block;">
+                                        <div class="rs-select2 js-select-simple select--no-search">
+                                            <select name="subject">
+                                                <option disabled="disabled" selected="selected">ILLUSTRATION</option>
+                                                <option>Science
+                                                <option>Emotion</option>
+                                                <option>Charactor</option>
+                                                <option>Business</option>
+                                                <option>Event</option>
+                                                <option>Education</option>
+                                                <option>Buildings</option>
+                                                <option>Society</option>
+                                                <option>An Other</option>
+                                            </select>
+                                            <div class="select-dropdown"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Select</div>
+                        <div class="value">
+                            <div class="input-group" style="display: block;">
+                                <div class="rs-select2 js-select-simple select--no-search">
+
+                                    <select name="subject">
+                                        <option disabled="disabled" selected="selected">Bg Size</option>
+                                        <option>1920*1080</option>
+                                        <option>1920*900</option>
+                                        <option>2000*2000</option>
+                                        <option>3555*2000</option>
+                                        <option>4266*2000</option>
+                                    </select>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Image Title</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" name="company">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Keywords (Tags)</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" name="company"
+                                    placeholder="type and press ENTER to add multipul tags">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Upload Image</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="file" name="company">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="name">Drag Zip File:</label>
+                        <small class="text-muted"><br>Please upload the ZIP package (source file PSD/AI/EPS + thumbnail
+                            PNG/JPG)</small>
+                        <div class="form-group-feedback form-group-feedback-right files"
+                            style="width: 89%; margin-left: 128px;">
+                            <input type="file" class="form-control-file border " name="zip_file" accept=".zip,.7zip"
+                                placeholder="click here to upload ">
+                            <small class="text-muted">
+                                Supported formats: zip
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Select</div>
+                        <div class="value">
+                            <div class="input-group" style="display: block;">
+                                <div class="rs-select2 js-select-simple select--no-search">
+
+                                    <select name="subject">
+                                        <option disabled="disabled" selected="selected">Source File</option>
+                                        <option>Ai</option>
+                                        <option>Psd</option>
+                                        <option>Eps</option>
+                                        <option>Images</option>
+                                    </select>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn--radius-2 btn--blue" type="submit" style="float: right;">Submit</button>
+                    </div>
+
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <img src="img/ad.png" style="padding-left: 30px;">
+                    </div><br>
+
+
+                </div> <!-- new upload end -->
+
+                <div id="Earning" class="tabcontent">
+                    <!-- Finance start -->
+
+                    <div class="row" id="mainrow">
+
+
+                        <div class=" card col-sm-3 " id="rowdesign">
+
+                            <div class="card-body">
+                                <img src="img/dollor.png"><br>
+                                Total Income <br> $0
+                            </div>
+
+                        </div>
+
+                        <div class="card col-sm-3" id="rowdesign">
+
+                            <div class="card-body">
+                                <img src="img/bank.png"><br>
+                                Withdrawn <br> $0
+                            </div>
+
+                        </div>
+
+                        <div class="card col-sm-3 " id="rowdesign">
+
+                            <div class="card-body">
+                                <img src="img/bankcard.png"><br>
+                                Withdrawing <br> $0
+
+                            </div>
+
+                        </div>
+
+                        <div class="card col-sm-3" id="rowdesign">
+                            <div class="card-body">
+                                <img src="img/bankcard.png"><br>
+                                Undrawn Income <br> $0
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <br>
+
+                    <button class="btn btn--radius-2 btn--blue" type="submit" style="float: right;">Withdraw</button>
+                    <br>
+                    <br> <br>
+
+
+                </div> <!-- Finance end -->
+
+                <div id="My Downloads" class="tabcontent">
+                    <!-- my Downloads start -->
+
+                    <h3>Your content here</h3>
+
+                </div>
+
+            </div> <!--  my upload end -->
+
+            <div id="My Downloads" class="tabcontent">
+                <!-- my Downloads start -->
+
+                <h3>Your content here</h3>
+
+            </div> <!--  my Downloads end -->
+
+            <div id="My Favorites" class="tabcontent">
+                <!-- my Favorites start -->
+
+                <h3>Your content here</h3>
+
+            </div> <!--  my Favorites end -->
+
+
+
+
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="vendor/jquery/global.js"></script>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        //for collapsing sidebar
+
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+        //for opeing dropdown submenu
+
+        $(document).ready(function () {
+            $('.dropdown-submenu a.test').on("click", function (e) {
+                $(this).next('ul').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+
+        //for closing menu while other is open
+
+        $('li').on('click', function (e) {
+            $(this).children('ul').toggle();
+            $(this).siblings('li').find('ul').hide();
+            e.stopPropagation();
+        });
+
+        //for tabs
+
+        function openBox(evt, Name) {
+
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(Name).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
+
+    </script>
+
+</body>
+
+</html>
