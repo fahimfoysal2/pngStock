@@ -1,3 +1,28 @@
 body {
-    background: linear-gradient(to top right, #08aeea 0%, #b721ff 100%);
+    /* background: linear-gradient(to top right, #08aeea 0%, #b721ff 100%); */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/* recent Downloads */
+/* ------- Swipe -------- */
+@media screen and (max-width: 1200px) {
+    .swiper.active {
+        overflow-x: auto;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .swiper.active {
+        justify-content: center;
+        transition: all 200ms ease-out 0s;
+        cursor: -webkit-grab;
+        transform: translate3d(0px, 0px, 0px);
+    }
 }
