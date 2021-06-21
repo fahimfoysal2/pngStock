@@ -1,0 +1,15 @@
+.responsive-logo-image {
+    width: 160px;
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: fit-content;
+}
+
+@media screen and (max-width: 350px) {
+    html .hide-small-phone {
+        display: none !important
+    }
+}
