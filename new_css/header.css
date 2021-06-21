@@ -13,3 +13,13 @@
         display: none !important
     }
 }
+.responsive-nav-icon {
+    display: block;
+    width: 100%;
+}
+.responsive-nav-icon .fa{
+    padding: 0;
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+}
