@@ -22,6 +22,12 @@ body {
     max-width: 310px !important;
 }
 
+#responsive-footer-social {
+    text-align: center;
+    margin: auto;
+    /* transform: translate(-30%); */
+}
+
 /*--------- mobile -------------*/
 
 .collection__item .collection__link {
@@ -36,6 +42,15 @@ body {
     .swiper.active {
         justify-content: flex-start;
     }
+}
+
+/* --------- Above Tab ---------- */
+
+@media screen and (min-width: 769px) {
+    #responsive-footer-social {
+        transform: translate(-30%);
+    }
+    
 }
 
 /*------ desktop and above -------*/
