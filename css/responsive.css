@@ -16,7 +16,13 @@ body {
     transform: translate3d(0px, 0px, 0px);
 }
 
-/* mobile */
+.responsive-bg-section {
+    width: auto;
+    min-width: 300px !important;
+    max-width: 300px !important;
+}
+
+/*--------- mobile -------------*/
 
 .collection__item .collection__link {
     width: auto;
@@ -27,9 +33,8 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-    .res-swiper-blank {
-        /* width: 500px; */
-        /* margin-left: -7px; */
+    .swiper.active {
+        justify-content: flex-start;
     }
 }
 
@@ -44,5 +49,8 @@ body {
 @media screen and (min-width: 1201px) {
     .justify-center-lg {
         justify-content: center !important;
+    }
+    .swiper.active {
+        justify-content: space-between;
     }
 }
