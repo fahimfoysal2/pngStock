@@ -60,6 +60,10 @@
         }
     </style>
 
+    <!-- responsive css -->
+
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./new_css/header.css">
 
 </head>
 
@@ -69,35 +73,35 @@
             <div class="card card-5">
 
                 <div class="card-body">
-                    <div class="row">
+                    <div class="row res-row-justify-center" style="align-items: center;">
                         <div class="col-sm-6">
-                            <img width="500px" height="400px" src="img/one.jpg">
+                            <div class="res-dwnld-left">
 
-                            <div class="row" style="margin-top: 10px;">
-                                <button class="btn btn--radius-2 btn--blue" type="submit">Download</button>
-                                <a href="">
-                                    <h5 id="btnpadd">JPG</h5>
-                                </a>
-                                <a href="">
-                                    <h5 id="btnpadd">PSD</h5>
-                                </a>
-                                <div> <a href=""><img style="padding-right:5px;" src="img/illustrator.png">
-                                        <span
-                                            style="font-weight: bold; color: black; font-size: 16px;">PNG|Ai</span></a>
+                                <img width="500px" height="400px" id="res-download-img" src="img/one.jpg">
+
+                                <div class="row" style="margin-top: 10px;">
+                                    <button class="btn btn--radius-2 btn--blue" type="submit">Download</button>
+                                    <a href="">
+                                        <h5 id="btnpadd">JPG</h5>
+                                    </a>
+                                    <a href="">
+                                        <h5 id="btnpadd">PSD</h5>
+                                    </a>
+                                    <div> <a href=""><img style="padding-right:5px;" src="img/illustrator.png">
+                                            <span
+                                                style="font-weight: bold; color: black; font-size: 16px;">PNG|Ai</span></a>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
 
                         <div class="col-sm-6">
                             <h3 id="title">Image Title</h3>
-
-                            <br><br>
-
+                            <br>
 
                             <div class="row">
                                 <div class="col-sm-2">
-                                    <img style="padding-left: 206px;" src="img/image.png">
+                                    <img style="padding-left: 206px;" class="res-dwnld-img-desc" src="img/image.png">
 
                                 </div>
                                 <div style="padding-left: 10px;" class="col-sm-2">
@@ -111,7 +115,7 @@
 
                             <div class="row">
                                 <div class="col-sm-2">
-                                    <img style="padding-left: 206px;" src="img/imgsize.png">
+                                    <img style="padding-left: 206px;" class="res-dwnld-img-desc" src="img/imgsize.png">
 
                                 </div>
                                 <div style="padding-left: 10px;" class="col-sm-2">
@@ -126,7 +130,8 @@
                             <br>
                             <div class="row">
                                 <div class="col-sm-2">
-                                    <img style="padding-left: 206px;" src="img/resolution.png">
+                                    <img style="padding-left: 206px;" class="res-dwnld-img-desc"
+                                        src="img/resolution.png">
 
                                 </div>
                                 <div style="padding-left: 10px;" class="col-sm-2">
@@ -140,7 +145,7 @@
                             <br>
                             <div class="row">
                                 <div class="col-sm-2">
-                                    <img style="padding-left: 206px;" src="img/like.png">
+                                    <img style="padding-left: 206px;" class="res-dwnld-img-desc" src="img/like.png">
 
                                 </div>
                                 <div style="padding-left: 10px;" class="col-sm-2">
@@ -154,7 +159,7 @@
                             <br>
                             <div class="row">
                                 <div class="col-sm-2">
-                                    <img style="padding-left: 206px;" src="img/download.png">
+                                    <img style="padding-left: 206px;" class="res-dwnld-img-desc" src="img/download.png">
 
                                 </div>
                                 <div style="padding-left: 10px;" class="col-sm-2">
@@ -167,7 +172,7 @@
                             </div><br>
                             <div class="row">
                                 <div class="col-sm-2">
-                                    <img style="padding-left: 206px;" src="img/upload.png">
+                                    <img style="padding-left: 206px;" class="res-dwnld-img-desc" src="img/upload.png">
 
                                 </div>
                                 <div style="padding-left: 10px;" class="col-sm-2">
@@ -180,7 +185,7 @@
                             </div><br>
                             <div class="row">
                                 <div class="col-sm-2">
-                                    <img style="padding-left: 206px;" src="img/user.png">
+                                    <img style="padding-left: 206px;" class="res-dwnld-img-desc" src="img/user.png">
 
                                 </div>
                                 <div style="padding-left: 10px;" class="col-sm-2">
@@ -191,10 +196,10 @@
                                     <h5 id="pading2" style="padding-left: 53px;">User Name</h5>
                                 </div>
                             </div><br>
-                            <div class="row">
+                            <div class="row res-row-justify-center">
                                 <div class="col-sm-6">
-                                    <img src="img/share.png" width="48px" height="48px" style="margin-left: 227px;
-    margin-right: 10px;">
+                                    <img src="img/share.png" width="48px" height="48px"
+                                        style="margin-left: 227px;margin-right: 10px;" class="res-dwnld-img-share">
                                 </div>
                                 <div class="col-sm-6">
                                     <button style="height: 48px;" id="pading2" width="50%"
@@ -202,10 +207,9 @@
                                 </div>
                             </div>
                             <br>
-                            <h4 style="padding-left: 300px; font-weight: bold;">Follow Us</h4>
+                            <h4 class="res-follow-us" style="padding-left: 300px; font-weight: bold;">Follow Us</h4>
 
-                            <div class="row" style="padding-left: 150px;">
-
+                            <div class="row res-follow-us" style="padding-left: 150px;">
                                 <a href="#" class="fa fa-facebook"></a>
                                 <a href="#" class="fa fa-twitter"></a>
                                 <a href="#" class="fa fa-google"></a>
@@ -213,16 +217,15 @@
                                 <a href="#" class="fa fa-youtube"></a>
                                 <a href="#" class="fa fa-instagram"></a>
                                 <a href="#" class="fa fa-pinterest"></a>
-
                             </div>
 
                         </div>
+                    </div>
 
-
-                    </div><!-- <main row end> -->
-
-                    <div class="row">
-                        <img src="img/ad.png" style="padding-left: 120px;">
+                    <div class="row" style="justify-content: center;">
+                        <div class="res-g-add-wrapper">
+                            <img class="res-g-add" src="img/g_ad.png">
+                        </div>
                     </div>
 
 
@@ -234,16 +237,16 @@
                                 <h2 class="first font-h6">Related Image</h2>
                             </header>
 
-                            <div class="swiper swiper-home swiper__mobile row row--horizontal-center active swiper__row"
-                                style="transition: all 200ms ease-out 0s; cursor: -webkit-grab; transform: translate3d(0px, 0px, 0px); width: 1530px; margin-left: -29px;">
+                            <div
+                                class="swiper swiper-home swiper__mobile row row--horizontal-center active swiper__row swiper-style">
 
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
+                                <article
+                                    class="collection collection__item swiper__item swiper__item__done responsive-related-section">
                                     <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
+                                        <a href="" class="collection__link">
 
                                             <div class="image-wrapper">
-                                                <div class="image image--triple">
+                                                <div class="image">
                                                     <figure>
                                                         <img class="" src="img/one.jpg"
                                                             alt="online shoppings instagram stories" width="626"
@@ -252,159 +255,36 @@
                                                 </div>
                                             </div>
                                         </a>
+                                    </div>
+                                    <div class="collection__description">
+                                        <div class="collection__content">
+                                            <div class="row row--vertical-center mg-none-i">
+                                                <h2 class="font-md regular">
+                                                    <div class="row mg-none-i">
 
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
+                                                        <span class="collection__title overflow-ellipsis pd-y-none"
+                                                            style="text-align: center;">Image Title</span>
 
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
+                                                        <span class="collection__description-text hide"></span>
+                                                    </div>
+                                                </h2>
+                                            </div>
 
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
+                                            <div class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
+                                                <span class="count">Download</span>
 
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
                                             </div>
                                         </div>
+                                    </div>
                                 </article>
 
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
+                                <article
+                                    class="collection collection__item swiper__item swiper__item__done responsive-related-section">
                                     <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
+                                        <a href="" class="collection__link">
 
                                             <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/two.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/three.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/four.png"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                            </div>
-                            <br>
-
-                            <div class="swiper swiper-home swiper__mobile row row--horizontal-center active swiper__row"
-                                style="transition: all 200ms ease-out 0s; cursor: -webkit-grab; transform: translate3d(0px, 0px, 0px); width: 1530px; margin-left: -29px;">
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
+                                                <div class="image">
                                                     <figure>
                                                         <img class="" src="img/one.jpg"
                                                             alt="online shoppings instagram stories" width="626"
@@ -413,157 +293,36 @@
                                                 </div>
                                             </div>
                                         </a>
+                                    </div>
+                                    <div class="collection__description">
+                                        <div class="collection__content">
+                                            <div class="row row--vertical-center mg-none-i">
+                                                <h2 class="font-md regular">
+                                                    <div class="row mg-none-i">
 
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
+                                                        <span class="collection__title overflow-ellipsis pd-y-none"
+                                                            style="text-align: center;">Image Title</span>
 
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
+                                                        <span class="collection__description-text hide"></span>
+                                                    </div>
+                                                </h2>
+                                            </div>
 
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
+                                            <div class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
+                                                <span class="count">Download</span>
 
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
                                             </div>
                                         </div>
+                                    </div>
                                 </article>
 
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
+                                <article
+                                    class="collection collection__item swiper__item swiper__item__done responsive-related-section">
                                     <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
+                                        <a href="" class="collection__link">
 
                                             <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/two.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/three.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/four.png"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                            </div>
-                            <div class="swiper swiper-home swiper__mobile row row--horizontal-center active swiper__row"
-                                style="transition: all 200ms ease-out 0s; cursor: -webkit-grab; transform: translate3d(0px, 0px, 0px); width: 1530px; margin-left: -29px;">
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
+                                                <div class="image">
                                                     <figure>
                                                         <img class="" src="img/one.jpg"
                                                             alt="online shoppings instagram stories" width="626"
@@ -572,157 +331,36 @@
                                                 </div>
                                             </div>
                                         </a>
+                                    </div>
+                                    <div class="collection__description">
+                                        <div class="collection__content">
+                                            <div class="row row--vertical-center mg-none-i">
+                                                <h2 class="font-md regular">
+                                                    <div class="row mg-none-i">
 
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
+                                                        <span class="collection__title overflow-ellipsis pd-y-none"
+                                                            style="text-align: center;">Image Title</span>
 
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
+                                                        <span class="collection__description-text hide"></span>
+                                                    </div>
+                                                </h2>
+                                            </div>
 
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
+                                            <div class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
+                                                <span class="count">Download</span>
 
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
                                             </div>
                                         </div>
+                                    </div>
                                 </article>
 
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
+                                <article
+                                    class="collection collection__item swiper__item swiper__item__done responsive-related-section">
                                     <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
+                                        <a href="" class="collection__link">
 
                                             <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/two.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/three.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/four.png"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                            </div>
-                            <div class="swiper swiper-home swiper__mobile row row--horizontal-center active swiper__row"
-                                style="transition: all 200ms ease-out 0s; cursor: -webkit-grab; transform: translate3d(0px, 0px, 0px); width: 1530px; margin-left: -29px;">
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
+                                                <div class="image">
                                                     <figure>
                                                         <img class="" src="img/one.jpg"
                                                             alt="online shoppings instagram stories" width="626"
@@ -731,37 +369,41 @@
                                                 </div>
                                             </div>
                                         </a>
+                                    </div>
+                                    <div class="collection__description">
+                                        <div class="collection__content">
+                                            <div class="row row--vertical-center mg-none-i">
+                                                <h2 class="font-md regular">
+                                                    <div class="row mg-none-i">
 
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
+                                                        <span class="collection__title overflow-ellipsis pd-y-none"
+                                                            style="text-align: center;">Image Title</span>
 
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
+                                                        <span class="collection__description-text hide"></span>
+                                                    </div>
+                                                </h2>
+                                            </div>
 
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
+                                            <div class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
+                                                <span class="count">Download</span>
 
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
                                             </div>
                                         </div>
+                                    </div>
                                 </article>
 
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
+                            </div><br>
+
+                            <div
+                                class="swiper swiper-home swiper__mobile row row--horizontal-center active swiper__row swiper-style">
+
+                                <article
+                                    class="collection collection__item swiper__item swiper__item__done responsive-related-section">
                                     <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
+                                        <a href="" class="collection__link">
 
                                             <div class="image-wrapper">
-                                                <div class="image image--triple">
+                                                <div class="image">
                                                     <figure>
                                                         <img class="" src="img/two.jpg"
                                                             alt="online shoppings instagram stories" width="626"
@@ -770,157 +412,36 @@
                                                 </div>
                                             </div>
                                         </a>
+                                    </div>
+                                    <div class="collection__description">
+                                        <div class="collection__content">
+                                            <div class="row row--vertical-center mg-none-i">
+                                                <h2 class="font-md regular">
+                                                    <div class="row mg-none-i">
 
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
+                                                        <span class="collection__title overflow-ellipsis pd-y-none"
+                                                            style="text-align: center;">Image Title</span>
 
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
+                                                        <span class="collection__description-text hide"></span>
+                                                    </div>
+                                                </h2>
+                                            </div>
 
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
+                                            <div class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
+                                                <span class="count">Download</span>
 
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
                                             </div>
                                         </div>
+                                    </div>
                                 </article>
 
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
+                                <article
+                                    class="collection collection__item swiper__item swiper__item__done responsive-related-section">
                                     <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
+                                        <a href="" class="collection__link">
 
                                             <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/three.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/four.png"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                            </div>
-                            <div class="swiper swiper-home swiper__mobile row row--horizontal-center active swiper__row"
-                                style="transition: all 200ms ease-out 0s; cursor: -webkit-grab; transform: translate3d(0px, 0px, 0px); width: 1530px; margin-left: -29px;">
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/one.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
+                                                <div class="image">
                                                     <figure>
                                                         <img class="" src="img/two.jpg"
                                                             alt="online shoppings instagram stories" width="626"
@@ -929,157 +450,36 @@
                                                 </div>
                                             </div>
                                         </a>
+                                    </div>
+                                    <div class="collection__description">
+                                        <div class="collection__content">
+                                            <div class="row row--vertical-center mg-none-i">
+                                                <h2 class="font-md regular">
+                                                    <div class="row mg-none-i">
 
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
+                                                        <span class="collection__title overflow-ellipsis pd-y-none"
+                                                            style="text-align: center;">Image Title</span>
 
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
+                                                        <span class="collection__description-text hide"></span>
+                                                    </div>
+                                                </h2>
+                                            </div>
 
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
+                                            <div class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
+                                                <span class="count">Download</span>
 
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
                                             </div>
                                         </div>
+                                    </div>
                                 </article>
 
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
+                                <article
+                                    class="collection collection__item swiper__item swiper__item__done responsive-related-section">
                                     <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
+                                        <a href="" class="collection__link">
 
                                             <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/three.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/four.png"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                            </div>
-                            <div class="swiper swiper-home swiper__mobile row row--horizontal-center active swiper__row"
-                                style="transition: all 200ms ease-out 0s; cursor: -webkit-grab; transform: translate3d(0px, 0px, 0px); width: 1530px; margin-left: -29px;">
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/one.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
+                                                <div class="image">
                                                     <figure>
                                                         <img class="" src="img/two.jpg"
                                                             alt="online shoppings instagram stories" width="626"
@@ -1088,157 +488,36 @@
                                                 </div>
                                             </div>
                                         </a>
+                                    </div>
+                                    <div class="collection__description">
+                                        <div class="collection__content">
+                                            <div class="row row--vertical-center mg-none-i">
+                                                <h2 class="font-md regular">
+                                                    <div class="row mg-none-i">
 
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
+                                                        <span class="collection__title overflow-ellipsis pd-y-none"
+                                                            style="text-align: center;">Image Title</span>
 
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
+                                                        <span class="collection__description-text hide"></span>
+                                                    </div>
+                                                </h2>
+                                            </div>
 
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
+                                            <div class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
+                                                <span class="count">Download</span>
 
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
                                             </div>
                                         </div>
+                                    </div>
                                 </article>
 
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
+                                <article
+                                    class="collection collection__item swiper__item swiper__item__done responsive-related-section">
                                     <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
+                                        <a href="" class="collection__link">
 
                                             <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/three.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/four.png"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                            </div>
-                            <div class="swiper swiper-home swiper__mobile row row--horizontal-center active swiper__row"
-                                style="transition: all 200ms ease-out 0s; cursor: -webkit-grab; transform: translate3d(0px, 0px, 0px); width: 1530px; margin-left: -29px;">
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/one.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
+                                                <div class="image">
                                                     <figure>
                                                         <img class="" src="img/two.jpg"
                                                             alt="online shoppings instagram stories" width="626"
@@ -1247,591 +526,35 @@
                                                 </div>
                                             </div>
                                         </a>
+                                    </div>
+                                    <div class="collection__description">
+                                        <div class="collection__content">
+                                            <div class="row row--vertical-center mg-none-i">
+                                                <h2 class="font-md regular">
+                                                    <div class="row mg-none-i">
 
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
+                                                        <span class="collection__title overflow-ellipsis pd-y-none"
+                                                            style="text-align: center;">Image Title</span>
 
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
+                                                        <span class="collection__description-text hide"></span>
+                                                    </div>
+                                                </h2>
+                                            </div>
 
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
+                                            <div class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
+                                                <span class="count">Download</span>
 
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
                                             </div>
                                         </div>
+                                    </div>
                                 </article>
 
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/three.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/four.png"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                            </div>
-                            <div class="swiper swiper-home swiper__mobile row row--horizontal-center active swiper__row"
-                                style="transition: all 200ms ease-out 0s; cursor: -webkit-grab; transform: translate3d(0px, 0px, 0px); width: 1530px; margin-left: -29px;">
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/one.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/two.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/three.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/four.png"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                            </div>
-                            <div class="swiper swiper-home swiper__mobile row row--horizontal-center active swiper__row"
-                                style="transition: all 200ms ease-out 0s; cursor: -webkit-grab; transform: translate3d(0px, 0px, 0px); width: 1530px; margin-left: -29px;">
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/one.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/two.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/three.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/four.png"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                            </div>
-                            <div class="swiper swiper-home swiper__mobile row row--horizontal-center active swiper__row"
-                                style="transition: all 200ms ease-out 0s; cursor: -webkit-grab; transform: translate3d(0px, 0px, 0px); width: 1530px; margin-left: -29px;">
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/one.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/two.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/three.jpg"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-                                <article class="collection collection__item swiper__item swiper__item__done"
-                                    style="width: auto; min-width: 280px; max-width: 280px;">
-                                    <div class="content">
-                                        <a href="" class="collection__link" style="width: 500px;">
-
-                                            <div class="image-wrapper">
-                                                <div class="image image--triple">
-                                                    <figure>
-                                                        <img class="" src="img/four.png"
-                                                            alt="online shoppings instagram stories" width="626"
-                                                            height="417" data-src="">
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <div class="collection__description">
-                                            <div class="collection__content">
-                                                <div class="row row--vertical-center mg-none-i">
-                                                    <h2 class="font-md regular">
-                                                        <div class="row mg-none-i">
-
-                                                            <span class="collection__title overflow-ellipsis pd-y-none"
-                                                                style="text-align: center;">Image Title</span>
-
-                                                            <span class="collection__description-text hide"></span>
-                                                        </div>
-                                                    </h2>
-                                                </div>
-
-                                                <div
-                                                    class="row row--vertical-center mg-none-i font-sm text__scale-gray--7">
-                                                    <span class="count">Download</span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                </article>
-
-                            </div>
-
+                            </div><br>
 
                         </div>
                     </section><br>
 
-                    <div class="row" style="margin-left: 503px;">
+                    <div class="row" style="justify-content: center;">
                         <a href="#" class="previous round">&#8249;</a>&nbsp;
                         <a href="#" class="next round">&#8250;</a>
                     </div>
