@@ -1,7 +1,14 @@
 body {
-    /* background: linear-gradient(to top right, #08aeea 0%, #b721ff 100%); */
+    background: linear-gradient(to top right, #08aeea 0%, #b721ff 100%);
 }
 
+.res-bg-white{
+    background-color: whitesmoke;
+}
+
+.header-premium--bg2{
+    background: none;
+}
 .text-center {
     text-align: center;
 }
@@ -25,7 +32,6 @@ body {
 #responsive-footer-social {
     text-align: center;
     margin: auto;
-    /* transform: translate(-30%); */
 }
 
 /*--------- mobile -------------*/
@@ -50,7 +56,6 @@ body {
     #responsive-footer-social {
         transform: translate(-30%);
     }
-    
 }
 
 /*------ desktop and above -------*/
@@ -62,9 +67,6 @@ body {
 }
 
 @media screen and (min-width: 1201px) {
-    .justify-center-lg {
-        justify-content: center !important;
-    }
     .swiper.active {
         justify-content: space-between;
     }
