@@ -1,3 +1,10 @@
+/*
+******************************* 
+** Author: Fahim Foysal
+** Email: tofahimfoysal@gmail.com
+********************************
+*/
+
 body {
     background: linear-gradient(to top right, #08aeea 0%, #b721ff 100%);
 }
@@ -38,6 +45,75 @@ body {
 
 /* --------- Header Section  end------------ */
 
+
+/* --------- Footer Section ------------ */
+
+@media all {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    *, *:before, *:after {
+        -webkit-box-sizing: inherit;
+        -moz-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+    h6, p, ul {
+        margin: 0;
+        padding: 0;
+    }
+    h6 {
+        font-weight: 400;
+    }
+    h6 {
+        font-size: 13px;
+    }
+    input {
+        outline: none;
+        margin: 0;
+        border: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        width: 100%;
+        font-size: 14px;
+        font-family: inherit;
+    }
+    .fa {
+        padding: 8px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+    .fa-pinterest {
+        background: #cb2027;
+        color: white;
+    }
+}
+
+/* --------------- Footer end ------------------- */
+
 .text-center {
     text-align: center;
 }
@@ -56,12 +132,12 @@ body {
     transform: translate3d(0px, 0px, 0px);
 }
 
-/* 9999999999999999999999 */
 .responsive-bg-section {
     width: auto;
     min-width: 310px !important;
     max-width: 310px !important;
 }
+
 .responsive-related-section {
     width: auto;
     min-width: 200px !important;
@@ -84,41 +160,122 @@ body {
 /* -------- Download Page -------- */
 
 /* main image */
+
 #res-download-img {
     max-width: 500px;
     width: 100%;
     object-fit: cover;
 }
 
+/* ------ Admin Dashboard page ------ */
+
+.res-flt-btn-margin {
+    float: right;
+    margin-top: -10px;
+}
+
+.res-upload-wrapper {
+    padding: 10px 0 60px 0;
+}
+
+.btn--yellow {
+    background: #f39107;
+}
+
+.res-drag-upload {
+    box-sizing: border-box;
+    width: 89%;
+    margin-left: 128px;
+    overflow: hidden;
+}
+
+.res-upload-wrap {
+    max-width: inherit !important;
+    width: 100%;
+}
+
+.row.row-space {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.res-dashboard-gad {
+    max-width: inherit;
+    width: inherit;
+}
+
+img.res-dashboars-ad {
+    max-width: 350px;
+    width: 100%;
+}
+.res-form-col-no-pad{
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 10px;
+}
+
+.res-li-no-pad{
+    padding-left: 0 !important;
+}
+
+ul#pageSubmenu {
+    word-break: break-word;
+}
+
 /*--------- mobile -------------*/
+
+@media screen and (max-width: 768px) {
+    .tabcontent {
+        padding: 0;
+    }
+    .res-action-btn {
+        line-height: 36px;
+        padding: 0 10px;
+    }
+    .res-drag-upload {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .spanmargin{
+        padding-left: 0;
+    }
+}
 
 @media screen and (max-width: 1177px) {
     #title {
         padding-left: 0;
     }
-    .res-dwnld-img-desc{
+    .res-dwnld-img-desc {
         padding-left: 0 !important;
     }
-    .res-dwnld-img-share{
+    .res-dwnld-img-share {
         margin-left: 0 !important;
     }
-    .res-row-justify-center{
+    .res-row-justify-center {
         justify-content: center;
     }
-
-    .res-follow-us{
+    .res-follow-us {
         padding-left: 0 !important;
         text-align: center;
     }
-    .res-g-add-wrapper{
+    .res-g-add-wrapper {
         width: 100%;
     }
-    .res-g-add{
+    .res-g-add {
         padding-left: 0 !important;
         max-width: 100%;
     }
 }
-
+@media screen and (min-width: 576px) {
+    .res-form-col-no-pad-lg-right{
+        padding-right: 15px;
+    }
+    .res-form-col-no-pad-lg-left{
+        padding-left: 15px;
+    }
+}
 /* --------- Above Tab ---------- */
 
 @media screen and (min-width: 769px) {
