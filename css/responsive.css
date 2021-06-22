@@ -10,8 +10,31 @@ body {
     justify-content: center;
 }
 
-/* recent Downloads */
-/* ------- Swipe -------- */
+.swiper-style {
+    transition: all 200ms ease-out 0s;
+    cursor: -webkit-grab;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/* mobile */
+
+.collection__item .collection__link {
+    width: auto;
+}
+
+.collection .image figure:nth-child(1) {
+    grid-area: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .res-swiper-blank {
+        /* width: 500px; */
+        /* margin-left: -7px; */
+    }
+}
+
+/*------ desktop and above -------*/
+
 @media screen and (max-width: 1200px) {
     .swiper.active {
         overflow-x: auto;
@@ -19,10 +42,7 @@ body {
 }
 
 @media screen and (min-width: 1201px) {
-    .swiper.active {
-        justify-content: center;
-        transition: all 200ms ease-out 0s;
-        cursor: -webkit-grab;
-        transform: translate3d(0px, 0px, 0px);
+    .justify-center-lg {
+        justify-content: center !important;
     }
 }
