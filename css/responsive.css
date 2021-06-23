@@ -1,7 +1,7 @@
 /*
 ******************************* 
-** Author: Fahim Foysal
-** Email: tofahimfoysal@gmail.com
+** Author : Fahim Foysal
+** Email  : tofahimfoysal@gmail.com
 ********************************
 */
 
@@ -45,7 +45,6 @@ body {
 }
 
 /* --------- Header Section  end------------ */
-
 
 /* --------- Footer Section ------------ */
 
@@ -176,7 +175,7 @@ body {
 }
 
 .res-upload-wrapper {
-    padding: 10px 0 60px 0;
+    padding: 10px 0 12px 0;
 }
 
 .btn--yellow {
@@ -210,13 +209,14 @@ img.res-dashboars-ad {
     max-width: 350px;
     width: 100%;
 }
-.res-form-col-no-pad{
+
+.res-form-col-no-pad {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 10px;
 }
 
-.res-li-no-pad{
+.res-li-no-pad {
     padding-left: 0 !important;
 }
 
@@ -224,22 +224,46 @@ ul#pageSubmenu {
     word-break: break-word;
 }
 
+.res-actn-wrap {
+    display: flex;
+    gap: 5px;
+    align-content: space-between;
+    flex-direction: row;
+}
+
+.res-action-btn {
+    width: 49%;
+}
+
 /*--------- mobile -------------*/
+
+@media screen and (max-width: 575px) {
+    .res-action-btn {
+        line-height: 36px;
+        padding: 0 0;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+    .res-actn-wrap {
+        flex-direction: column;
+        width: 100%;
+    }
+    .res-action-btn {
+        width: auto;
+        line-height: 30px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .tabcontent {
         padding: 0;
     }
-    .res-action-btn {
-        line-height: 36px;
-        padding: 0 10px;
-    }
     .res-drag-upload {
         width: 100%;
         margin-left: 0;
     }
-
-    .spanmargin{
+    .spanmargin {
         padding-left: 0;
     }
 }
@@ -269,14 +293,16 @@ ul#pageSubmenu {
         max-width: 100%;
     }
 }
+
 @media screen and (min-width: 576px) {
-    .res-form-col-no-pad-lg-right{
+    .res-form-col-no-pad-lg-right {
         padding-right: 15px;
     }
-    .res-form-col-no-pad-lg-left{
+    .res-form-col-no-pad-lg-left {
         padding-left: 15px;
     }
 }
+
 /* --------- Above Tab ---------- */
 
 @media screen and (min-width: 769px) {
