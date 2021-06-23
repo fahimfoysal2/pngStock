@@ -61,7 +61,7 @@ body {
     padding: 4px 15px;
     transition: 0.3s;
     font-size: 16px;
-    color: #01581d;
+    color: #fff;
 }
 
 /* Change background color of buttons on hover */
@@ -73,7 +73,7 @@ body {
 /* Create an active/current tablink class */
 
 .tab button.active {
-    background-color: #bfbdbd;
+    background-color: #f39238;
 }
 
 /* Style the tab content */
