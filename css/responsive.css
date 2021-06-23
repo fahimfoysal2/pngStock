@@ -235,6 +235,10 @@ ul#pageSubmenu {
     width: 49%;
 }
 
+.res-d-none{
+    display: none;
+}
+
 /*--------- mobile -------------*/
 
 @media screen and (max-width: 575px) {
@@ -266,6 +270,20 @@ ul#pageSubmenu {
     .spanmargin {
         padding-left: 0;
     }
+
+    .responsive-logo-image {
+        display: block;
+        position: fixed;
+        margin-bottom: 0;
+        right: 0;
+        top: 0;
+        width: 140px;
+        height: auto;
+    }
+    a.logo{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 1177px) {
