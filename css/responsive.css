@@ -133,6 +133,7 @@ body {
 }
 
 .responsive-bg-section {
+    margin-right: 0 !important;
     width: auto;
     min-width: 310px !important;
     max-width: 310px !important;
@@ -246,7 +247,8 @@ ul#pageSubmenu {
     justify-content: flex-start;
     gap: 5px;
 }
-.tablinks{
+
+.tablinks {
     text-align: left;
 }
 
@@ -288,7 +290,7 @@ ul#pageSubmenu {
         display: block;
         position: fixed;
         margin-bottom: 0;
-        right: 0;
+        right: 25px;
         top: 0;
         width: 140px;
         height: auto;
@@ -345,13 +347,33 @@ ul#pageSubmenu {
 
 @media screen and (max-width: 1200px) {
     .swiper.active {
-        justify-content: flex-start;
-        overflow-x: auto;
+        justify-content: space-between;
+        flex-wrap: wrap !important;
+        gap: 10px;
+        overflow-x: hidden;
+    }
+
+    .swiper.active.more-items {
+        justify-content: center;
     }
 }
 
 @media screen and (min-width: 1201px) {
     .swiper.active {
         justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 969px) {
+    .swiper.active {
+        justify-content: center;
+    }
+}
+
+/* over ride css */
+
+@media screen and (max-width: 640px) {
+    .swiper__mobile .collection__item {
+        margin-right: 0;
     }
 }
