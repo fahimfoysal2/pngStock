@@ -189,58 +189,51 @@
                     <img src="img/logo.png" class="responsive-logo-image">
                 </a>
 
-                <form id=" search" class="search search-filter col pd-none-i mg-left-lv2-i" action="" method="get"
-                    novalidate="">
+                <form id="search" name="res_search_form" class="search search-filter col pd-none-i mg-left-lv2-i"
+                    action="" method="get" enctype="multipart/form-data" novalidate="">
                     <div class="group overflow-visible mg-none" style="position: relative;">
 
                         <div
                             class="search__dropdown popover popover--mobile-fullscreen popover--bottom-left hide-mobile noscript">
                             <span class="popover__trigger dropdown__button overflow-hidden overflow-ellipsis font-sm"
-                                title="All resources">All resources</span>
+                                title="All resources" id="selected_format">All resources</span>
 
                             <div class="popover__container pd-lv2">
                                 <div class="trigger collection-search">
-                                    <label for="format-search"
-                                        class="filter radio radio--sm pd-none-i mg-bottom-lv2 active"
-                                        data-field-name="format" onclick="return false;">
-                                        <span class="radio__indicator"></span>
-                                        <span class="radio__link font-sm">Resources</span>
+                                    <label class="res-search-input">
+                                        <input class="res-input-checkbox" id="inp-res" type="radio" name="format"
+                                            value="resources" checked>
+                                        <label class="font-md res-input-label" for="inp-res">Resources</label>
                                     </label>
-
-                                    <label for="format-collections"
-                                        class="filter radio radio--sm pd-none-i mg-bottom-lv2" data-field-name="format"
-                                        onclick="return false;">
-                                        <span class="radio__indicator"></span>
-                                        <span class="radio__link font-sm">Collections</span>
+                                    <label class="res-search-input">
+                                        <input class="res-input-checkbox" id="inp-collection" type="radio" name="format"
+                                            value="collections">
+                                        <label class="font-md res-input-label" for="inp-collection">Collections</label>
                                     </label>
                                 </div>
 
-
+                                <div class="separator"></div>
 
                                 <div class="trigger">
-                                    <label for="type-vector"
-                                        class="filter checkbox checkbox--sm pd-none-i mg-bottom-lv2"
-                                        data-field-name="type" onclick="return false;">
-                                        <span class="checkbox__indicator"><i class="icon icon--check"></i></span>
-                                        <span class="checkbox__link font-sm">Vectors</span>
+                                    <label class="res-search-input">
+                                        <input class="res-input-checkbox" id="inp-vector" type="checkbox" name="type[]"
+                                            value="vector">
+                                        <label class="font-md res-input-label" for="inp-vector">Vectors</label>
                                     </label>
-
-                                    <label for="type-photo" class="filter checkbox checkbox--sm pd-none-i mg-bottom-lv2"
-                                        data-field-name="type" onclick="return false;">
-                                        <span class="checkbox__indicator"><i class="icon icon--check"></i></span>
-                                        <span class="checkbox__link font-sm">Photos</span>
+                                    <label class="res-search-input">
+                                        <input class="res-input-checkbox" id="inp-photo" type="checkbox" name="type[]"
+                                            value="photo">
+                                        <label class="font-md res-input-label" for="inp-photo">Photos</label>
                                     </label>
-
-                                    <label for="type-psd" class="filter checkbox checkbox--sm pd-none-i mg-bottom-lv2"
-                                        data-field-name="type" onclick="return false;">
-                                        <span class="checkbox__indicator"><i class="icon icon--check"></i></span>
-                                        <span class="checkbox__link font-sm">Psd</span>
+                                    <label class="res-search-input">
+                                        <input class="res-input-checkbox" id="inp-psd" type="checkbox" name="type[]"
+                                            value="psd">
+                                        <label class="font-md res-input-label" for="inp-psd">PSD</label>
                                     </label>
-
-                                    <label for="type-icon" class="filter checkbox checkbox--sm pd-none-i mg-none-i"
-                                        data-field-name="type" onclick="return false;">
-                                        <span class="checkbox__indicator"><i class="icon icon--check"></i></span>
-                                        <span class="checkbox__link font-sm">Flat Icons</span>
+                                    <label class="res-search-input">
+                                        <input class="res-input-checkbox" id="inp-icon" type="checkbox" name="type[]"
+                                            value="icon">
+                                        <label class="font-md res-input-label" for="inp-icon">Flat Icons</label>
                                     </label>
                                 </div>
                             </div>
@@ -1443,6 +1436,20 @@
                 menu.style.display = "none";
             }
         }
+
+        let selectedFormat = document.getElementById("selected_format");
+        var rad = document.res_search_form.format;
+        var prev = null;
+        for (var i = 0; i < rad.length; i++) {
+            rad[i].addEventListener('change', function () {
+                if (this !== prev) {
+                    prev = this;
+                    selectedFormat.innerHTML = "All " + this.value;
+                }
+                console.log(this.value)
+            });
+        }
+
     </script>
 
 
