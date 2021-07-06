@@ -64,6 +64,11 @@ body {
 
 /* --------- Header Section  end------------ */
 
+.swiper.active {
+    justify-content: space-between;
+    flex-wrap: wrap !important;
+}
+
 /* --------- Footer Section ------------ */
 
 @media all {
@@ -365,8 +370,6 @@ ul#pageSubmenu {
 
 @media screen and (max-width: 1200px) {
     .swiper.active {
-        justify-content: space-between;
-        flex-wrap: wrap !important;
         gap: 10px;
         overflow-x: hidden;
     }
@@ -377,7 +380,7 @@ ul#pageSubmenu {
 
 @media screen and (min-width: 1201px) {
     .swiper.active {
-        justify-content: space-between;
+        justify-content: center;
     }
 }
 
