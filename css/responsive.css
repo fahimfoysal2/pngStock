@@ -7,6 +7,7 @@
 
 body {
     background: linear-gradient(to top right, #08aeea 0%, #b721ff 100%);
+    font-family: "Proxima Nova","Verdana","Avenir Next";
 }
 
 /* --------- Header Section ------------ */
@@ -191,6 +192,14 @@ body {
     object-fit: cover;
 }
 
+.res-page-card-warpper-padding{
+    padding-top: 120px;
+}
+@media screen and (max-width: 768px) {
+    .res-page-card-warpper-padding{
+        padding-top: 100px;
+    }
+}
 /* ------ Admin Dashboard page ------ */
 
 .res-flt-btn-margin {
